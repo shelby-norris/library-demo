@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-indigo-100">
+    <header>
+      <h1 class="text-7xl">Library</h1>
+    </header>
+
+    <main class="w-[95vw] mx-auto">
+      <section class="flex flex-col [&>input]:border-indigo-300 [&>input]:border-4 [&>label]:text-indigo-600 text-indigo-700 *:my-2">
+        <label for="search-title">Search by Title</label>
+        <input
+          type="text"
+          name="search-title"
+          id="search-title"
+        />
+        <label for="search-title">Search by Author</label>
+        <input
+          type="text"
+          name="search-author"
+          id="search-author"
+        />
+      </section>
+    </main>
+  </body>
+</html>
